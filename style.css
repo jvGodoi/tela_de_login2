@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+  text-decoration: none;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(
+    to right top,
+    #5b3b93,
+    #64429e,
+    #6c49aa,
+    #7550b5,
+    #7e57c1
+  );
+}
+header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header h1 {
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  color: white;
+  font-weight: bold;
+  display: none;
+}
+#imagem-area img {
+  width: 400px;
+}
+#usando-flexbox {
+  height: 70vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+form {
+  height: 450px;
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  /* background-color: #3a0ca3; */
+  border-radius: 15px;
+}
+#titulo {
+  margin: 0;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#icons {
+  padding: 5px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#icons::after {
+  content: "";
+  height: 1px;
+  width: 50px;
+  background-color: #140927;
+}
+#icons::before {
+  content: "";
+  height: 1px;
+  width: 50px;
+  background-color: #140927;
+}
+#icons i {
+  font-size: 1.5em;
+  color: #1d0c3b;
+}
+#icons i:hover
+{
+  color: white;
+  transition: 0.3s ease-in;
+}
+#titulo h3 {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+
+}
+#componentes-form {
+  display: inline-block;
+  margin: 10px auto;
+  width: 80%;
+}
+label {
+  color: white;
+  font-weight: bold;
+  font-size: 0.73em;
+  letter-spacing: 3px;
+  margin-bottom: 115px;
+}
+
+input[type="submit"] {
+  display: block;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  height: 30px;
+  padding-left: 25px;
+  outline: none;
+  border-radius: 7px;
+  border: none;
+  box-shadow: 0px 1px 2px 1px black;
+}
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover
+{
+  border: 1px solid #41168a;
+  box-shadow: 0px 1px 3px 1px black;
+}
+.input {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.input i {
+  position: absolute;
+  left: 5px;
+  color: #381477;
+}
+.espaco {
+  margin: 15px 0px;
+}
+input[type="submit"] {
+  width: 120px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  padding: 7px;
+  border-radius: 15px;
+  border: none;
+  background-color: #41286d;
+  color: white;
+  box-shadow: 0px 1px 3px 1px black;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #271447;
+  transition: 0.2s all linear;
+}
+footer
+{
+  height: 30px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 800px)
+{
+ #imagem-area img
+ {
+   display: none;
+ }
+ #usando-flexbox
+ {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ form
+ {
+   margin: 0px 20px;
+ }
+ input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus
+{
+  border: 1px solid #41168a;
+  box-shadow: 0px 1px 3px 1px black;
+}
+#icons i:focus
+{
+  color: white;
+  transition: 0.3s ease-in;
+}
+}
